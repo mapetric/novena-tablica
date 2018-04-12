@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>HTML tablica</title>
+            <link rel="stylesheet" href="css/app.css">
+      </head>
+      <body>
+            <h1>Novena tablica</h1>
+            <table id="table">
+                  <tr id="header">
+                        <td>Ime</td>
+                        <td>Prezime</td>
+                        <td>Spol</td>
+                        <td>Dob</td>
+                        <td>Datum Prijave</td>
+                  </tr>
+            </table>
+            <div class="pop-up">
+                  <p></p>
+            </div>
+            <form>
+                  <input id="name" placeholder="Ime" type="text"/>
+                  <input id="surname" placeholder="Prezime" type="text"/>
+                  <select id="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                  </select>
+                  <input id="dateOfBirth" type="date"/>
+                  <input id="dateOfRegistration" type="date"/>
+                  <button id="addTableRow" type="button" name="addTableRow">Dodaj</button><br>
+                  <button id="sendJSON" type="button" name="SendJSON">Pošalji nove zapise</button>
+            </form>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/app.js"></script>
+      </body>
+</html>
